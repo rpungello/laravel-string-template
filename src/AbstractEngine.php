@@ -4,7 +4,7 @@ namespace Rpungello\LaravelStringTemplate;
 
 abstract class AbstractEngine
 {
-    public function __construct(protected string $left = '{', protected string $right = '}')
+    public function __construct(protected string $left, protected string $right)
     {
     }
 

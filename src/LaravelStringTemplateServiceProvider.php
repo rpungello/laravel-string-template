@@ -17,13 +17,15 @@ class LaravelStringTemplateServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-string-template')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-string-template_table')
-            ->hasCommand(LaravelStringTemplateCommand::class);
+            ->hasConfigFile();
 
         $this->app->singleton('laravel-string-template', function () {
-            return new LaravelStringTemplate(new Engine());
+            return new LaravelStringTemplate(
+                new Engine(
+                    config('string-template.left'),
+                    config('string-template.right')
+                )
+            );
         });
     }
 }
