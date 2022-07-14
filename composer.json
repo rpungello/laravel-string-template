@@ -31,8 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rpungello\\LaravelStringTemplate\\": "src",
-            "Rpungello\\LaravelStringTemplate\\Database\\Factories\\": "database/factories"
+            "Rpungello\\LaravelStringTemplate\\": "src"
         }
     },
     "autoload-dev": {

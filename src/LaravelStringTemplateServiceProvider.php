@@ -2,7 +2,6 @@
 
 namespace Rpungello\LaravelStringTemplate;
 
-use Rpungello\LaravelStringTemplate\Commands\LaravelStringTemplateCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
