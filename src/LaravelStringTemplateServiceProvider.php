@@ -2,9 +2,9 @@
 
 namespace Rpungello\LaravelStringTemplate;
 
+use Rpungello\LaravelStringTemplate\Commands\LaravelStringTemplateCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rpungello\LaravelStringTemplate\Commands\LaravelStringTemplateCommand;
 
 class LaravelStringTemplateServiceProvider extends PackageServiceProvider
 {
@@ -21,5 +21,9 @@ class LaravelStringTemplateServiceProvider extends PackageServiceProvider
             ->hasViews()
             ->hasMigration('create_laravel-string-template_table')
             ->hasCommand(LaravelStringTemplateCommand::class);
+
+        $this->app->singleton('laravel-string-template', function () {
+            return new LaravelStringTemplate(new Engine());
+        });
     }
 }
