@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Rpungello\LaravelStringTemplate\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelStringTemplateCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-string-template';
 
     public $description = 'My command';
 
