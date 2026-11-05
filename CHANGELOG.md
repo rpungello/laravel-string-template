@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-string-template` will be documented in this file.
 
+## 4.0.0 - 2026-11-05
+
+- Added support for Laravel 13
+- Dropped support for Laravel < 12
+
 ## 3.1.0 - 2025-03-01
 
 Add support for Laravel 12
